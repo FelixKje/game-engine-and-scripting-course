@@ -1,20 +1,28 @@
 using UnityEngine;
 
-public class PlayerInputController : MonoBehaviour
-{
-    public float MoveInput { get; private set; }
-    public bool JumpInputDown { get; private set; }
-    public bool JumpInputUp { get; private set; }
-    public bool JumpInput { get; private set; }
+public class PlayerInputController : MonoBehaviour{
+    [SerializeField] CommandContainer commandContainer;
+    float walkInput;
+    bool jumpInputDown;
+    bool jumpInputUp;
+    bool jumpInput;
 
     void Update(){
-        GetInput();
-    }
+        SetCommands();
+        GetInput(); 
+    } 
 
     void GetInput(){
-        MoveInput = Input.GetAxis("Horizontal");
-        JumpInputDown = Input.GetKeyDown(KeyCode.Space);
-        JumpInputUp = Input.GetKeyUp(KeyCode.Space);
-        JumpInput = Input.GetKey(KeyCode.Space);
+        walkInput = Input.GetAxis("Horizontal");
+        jumpInputDown = Input.GetKeyDown(KeyCode.Space);
+        jumpInputUp = Input.GetKeyUp(KeyCode.Space);
+        jumpInput = Input.GetKey(KeyCode.Space);
+    }
+
+    void SetCommands(){
+        commandContainer.WalkCommand = walkInput;
+        commandContainer.JumpCommandDown = jumpInputDown;
+        commandContainer.JumpCommandUp = jumpInputUp;
+        commandContainer.JumpCommand = jumpInput;
     }
 }

@@ -7,9 +7,8 @@ public class GroundChecker : MonoBehaviour
     [SerializeField] float groundCheckRadius = 0.5f;
     [SerializeField] LayerMask groundLayers;
 
-    void Update(){
-        CheckGround();
-    }
+    void Update() => CheckGround();
+    
 
     void CheckGround(){
         var ray = new Ray(transform.position, Vector3.down);
@@ -18,8 +17,8 @@ public class GroundChecker : MonoBehaviour
         // Debug.DrawRay(transform.position, Vector3.down * groundCheckLength, Color.magenta);
     }
 
-    // private void OnDrawGizmos()
-    // {
-    //     Gizmos.DrawSphere(transform.position + Vector3.down * groundCheckLength, groundCheckRadius);
-    // }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawSphere(transform.position + Vector3.down * groundCheckLength, groundCheckRadius);
+    //}
 }
