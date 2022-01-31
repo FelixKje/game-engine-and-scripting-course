@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1034892486594180384
+--- !u!1 &255630311316286406
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7919455998490321634}
-  - component: {fileID: 7999644352061528402}
-  - component: {fileID: 221332345}
+  - component: {fileID: 8455508097378758230}
+  - component: {fileID: 6426249844476373655}
   m_Layer: 0
-  m_Name: Inputs + Commands
+  m_Name: AI+Commands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7919455998490321634
+--- !u!4 &8455508097378758230
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034892486594180384}
+  m_GameObject: {fileID: 255630311316286406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7935766372369349662}
+  m_Father: {fileID: 6676985132967562177}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7999644352061528402
+--- !u!114 &6426249844476373655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034892486594180384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd02abf448669429fa62b2a856bae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  commandContainer: {fileID: 221332345}
---- !u!114 &221332345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034892486594180384}
+  m_GameObject: {fileID: 255630311316286406}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b49160bd84b26d64c855180e759127a5, type: 3}
@@ -62,7 +48,7 @@ MonoBehaviour:
   JumpCommandDown: 0
   JumpCommandUp: 0
   JumpCommand: 0
---- !u!1 &7935766372369349649
+--- !u!1 &3332415635904727510
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,52 +56,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7935766372369349662}
-  - component: {fileID: 7935766372369349661}
-  - component: {fileID: 7935766372369349660}
-  - component: {fileID: 7935766372369349651}
-  - component: {fileID: 7935766372369349650}
-  - component: {fileID: 3120981047776349144}
-  - component: {fileID: 456541583894355071}
-  - component: {fileID: 2715622170265066981}
+  - component: {fileID: 6676985132967562177}
+  - component: {fileID: 8900157165349913302}
+  - component: {fileID: 8844515841032704601}
+  - component: {fileID: 8456071317892316800}
+  - component: {fileID: 400205321869717716}
+  - component: {fileID: 1925104915950410465}
+  - component: {fileID: 1793611858562245773}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7935766372369349662
+--- !u!4 &6676985132967562177
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
+  m_GameObject: {fileID: 3332415635904727510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.66, y: 2.22, z: 0}
+  m_LocalPosition: {x: -3.01, y: 1.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7919455998490321634}
+  - {fileID: 8455508097378758230}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7935766372369349661
+--- !u!33 &8900157165349913302
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7935766372369349660
+  m_GameObject: {fileID: 3332415635904727510}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8844515841032704601
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
+  m_GameObject: {fileID: 3332415635904727510}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -129,7 +114,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bf29014e11056af438f301469c600820, type: 2}
+  - {fileID: 2100000, guid: c5ef347d1e3bc7d4bb5cb35227be1d17, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -151,27 +136,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7935766372369349651
-CapsuleCollider:
+--- !u!135 &8456071317892316800
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
+  m_GameObject: {fileID: 3332415635904727510}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7935766372369349650
+--- !u!54 &400205321869717716
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
+  m_GameObject: {fileID: 3332415635904727510}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -179,57 +163,39 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3120981047776349144
+--- !u!114 &1925104915950410465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
+  m_GameObject: {fileID: 3332415635904727510}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6615b1b84e9ab44cab7228724b43655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheckLength: 0.55
-  groundCheckRadius: 0.5
+  groundCheckLength: 0.1
+  groundCheckRadius: 0.45
   groundLayers:
     serializedVersion: 2
     m_Bits: 8
---- !u!114 &456541583894355071
+--- !u!114 &1793611858562245773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
+  m_GameObject: {fileID: 3332415635904727510}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bd735253faaff149a24f31dd90640ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRigidbody: {fileID: 7935766372369349650}
-  commandContainer: {fileID: 221332345}
-  groundChecker: {fileID: 3120981047776349144}
+  myRigidbody: {fileID: 400205321869717716}
+  commandContainer: {fileID: 6426249844476373655}
+  groundChecker: {fileID: 1925104915950410465}
   moveSpeed: 5
   chargingMoveSpeedFactor: 0.5
---- !u!114 &2715622170265066981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f0460f58ba6fa9489b81c9d5a80c652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myRigidbody: {fileID: 7935766372369349650}
-  commandContainer: {fileID: 221332345}
-  groundChecker: {fileID: 3120981047776349144}
-  minimumJumpForce: 100
-  maximumJumpForce: 1000
-  chargeTime: 1
