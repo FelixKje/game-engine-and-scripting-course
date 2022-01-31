@@ -2,22 +2,24 @@ using UnityEngine;
 
 public class PlayerChargeJumpController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody myRigidbody;
-    [SerializeField] private PlayerInputController playerInputController;
-    [SerializeField] private GroundChecker groundChecker;
-    [SerializeField] private float minimumJumpForce = 100f;
-    [SerializeField] private float maximumJumpForce = 1000f;
-    [SerializeField] private float chargeTime = 1f;
+    [SerializeField] Rigidbody myRigidbody;
+    [SerializeField] PlayerInputController playerInputController;
+    [SerializeField] GroundChecker groundChecker;
+    [SerializeField] float minimumJumpForce = 100f;
+    [SerializeField] float maximumJumpForce = 1000f;
+    [SerializeField] float chargeTime = 1f;
 
-    private float jumpCharge;
+    float jumpCharge;
 
-    private void Update()
-    {
+    void Update(){
+        HandleJump();
+    }
+
+    void HandleJump(){
         if (playerInputController.JumpInput)
             jumpCharge += Time.deltaTime / chargeTime;
 
-        if (playerInputController.JumpInputUp)
-        {
+        if (playerInputController.JumpInputUp){
             var jumpForce = Mathf.Lerp(minimumJumpForce, maximumJumpForce, jumpCharge);
             jumpCharge = 0f;
 
