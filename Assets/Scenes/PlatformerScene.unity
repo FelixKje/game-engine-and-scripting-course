@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &180003178 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7935766372369349662, guid: 341f043bca8be6e4ea7017be370158b6, type: 3}
+  m_PrefabInstance: {fileID: 7935766372261961076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,17 +313,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 255630311316286406, guid: 73ae6bba851af604f92e36188e4c5d90, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
+    - target: {fileID: 1469170096, guid: 73ae6bba851af604f92e36188e4c5d90, type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 180003178}
     - target: {fileID: 3332415635904727510, guid: 73ae6bba851af604f92e36188e4c5d90, type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332415635904727510, guid: 73ae6bba851af604f92e36188e4c5d90, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6676985132967562177, guid: 73ae6bba851af604f92e36188e4c5d90, type: 3}
       propertyPath: m_RootOrder
@@ -326,7 +327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6676985132967562177, guid: 73ae6bba851af604f92e36188e4c5d90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.01
+      value: 4.97
       objectReference: {fileID: 0}
     - target: {fileID: 6676985132967562177, guid: 73ae6bba851af604f92e36188e4c5d90, type: 3}
       propertyPath: m_LocalPosition.y
@@ -373,17 +374,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1034892486594180384, guid: 341f043bca8be6e4ea7017be370158b6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7935766372369349649, guid: 341f043bca8be6e4ea7017be370158b6, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935766372369349649, guid: 341f043bca8be6e4ea7017be370158b6, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7935766372369349662, guid: 341f043bca8be6e4ea7017be370158b6, type: 3}
       propertyPath: m_RootOrder
