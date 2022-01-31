@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerWalkController : MonoBehaviour
 {
-    [SerializeField] Rigidbody myRigidbody;
+    [SerializeField] MovementApplier movementApplier;
     [SerializeField] CommandContainer commandContainer;
     [SerializeField] GroundChecker groundChecker;
     [SerializeField] float moveSpeed = 5f;
@@ -16,6 +16,6 @@ public class PlayerWalkController : MonoBehaviour
         if (commandContainer.JumpCommand && groundChecker.IsGrounded)
             currentMoveSpeed *= chargingMoveSpeedFactor;
 
-        myRigidbody.velocity = new Vector3(commandContainer.WalkCommand * currentMoveSpeed, myRigidbody.velocity.y, 0);
+        movementApplier.SetHorizontalVelocity(commandContainer.WalkCommand * currentMoveSpeed);
     }
 }

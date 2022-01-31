@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerChargeJumpController : MonoBehaviour
 {
-    [SerializeField] Rigidbody myRigidbody;
+    [SerializeField] MovementApplier movementApplier;
     [SerializeField] CommandContainer commandContainer;
     [SerializeField] GroundChecker groundChecker;
     [SerializeField] float minimumJumpForce = 100f;
@@ -22,7 +22,7 @@ public class PlayerChargeJumpController : MonoBehaviour
             jumpCharge = 0f;
 
             if (groundChecker.IsGrounded)
-                myRigidbody.AddForce(Vector3.up * jumpForce);
+                movementApplier.AddForce(Vector3.up * jumpForce);
         }
     }
 }
