@@ -2,23 +2,22 @@ using UnityEngine;
 
 public class PlayerWalkController : MonoBehaviour
 {
-    Rigidbody _Rigidbody;
-    
-    public float moveSpeed = 5f;
-    
-    void Awake(){
-        _Rigidbody = GetComponent<Rigidbody>();
+    [SerializeField] Rigidbody myRigidbody;
+    [SerializeField] PlayerInputController playerInputController;
+    [SerializeField] GroundChecker groundChecker;
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float chargingMoveSpeedFactor = 0.5f;
+
+    void Update(){
+        HandleWalking();
     }
 
-    
-    void Update()
-    {
-        //Get move input
-        //Pref get input in Update()
-        var moveInput = Input.GetAxis("Horizontal");
-        
-        //Set move velocity
-        //Pref interact with physics in FixedUpdate()
-        _Rigidbody.velocity = new Vector3(moveSpeed * moveInput, _Rigidbody.velocity.y, 0);
+    void HandleWalking(){
+        //Slower move speed while charging a jump.
+        var currentMoveSpeed = moveSpeed;
+        if (playerInputController.JumpInput && groundChecker.IsGrounded)
+            currentMoveSpeed *= chargingMoveSpeedFactor;
+
+        myRigidbody.velocity = new Vector3(playerInputController.MoveInput * currentMoveSpeed, myRigidbody.velocity.y, 0);
     }
 }
