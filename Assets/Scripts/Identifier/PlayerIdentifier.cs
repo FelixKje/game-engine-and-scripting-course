@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerIdentifierComponent : MonoBehaviour
+public class PlayerIdentifier : MonoBehaviour
 {
     //Only used to find the player
 }

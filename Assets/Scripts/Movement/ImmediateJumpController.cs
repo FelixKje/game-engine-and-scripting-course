@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerImmediateJumpController : MonoBehaviour{
+public class ImmediateJumpController : MonoBehaviour{
     [SerializeField] Rigidbody _rigidbody;
     [SerializeField] CommandContainer commandContainer;
     [SerializeField] GroundChecker groundChecker;
