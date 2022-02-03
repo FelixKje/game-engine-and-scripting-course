@@ -93,7 +93,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3332415635904727510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.01, y: 1.48, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -212,5 +212,5 @@ MonoBehaviour:
   _rigidbody: {fileID: 400205321869717716}
   commandContainer: {fileID: 6426249844476373655}
   groundChecker: {fileID: 1925104915950410465}
-  moveSpeed: 3
+  walkSpeedSo: {fileID: 11400000, guid: bbd28e421b76fd9479917c1e7465e27e, type: 2}
   chargingMoveSpeedFactor: 0.5

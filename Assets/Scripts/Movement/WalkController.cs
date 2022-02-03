@@ -5,14 +5,14 @@ public class WalkController : MonoBehaviour
     [SerializeField] Rigidbody _rigidbody;
     [SerializeField] CommandContainer commandContainer;
     [SerializeField] GroundChecker groundChecker;
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] WalkSpeedSO walkSpeedSo;
     [SerializeField] float chargingMoveSpeedFactor = 0.5f;
 
     void Update() => HandleWalking();
 
     void HandleWalking(){
         //Slower move speed while charging a jump.
-        var currentMoveSpeed = moveSpeed;
+        var currentMoveSpeed = walkSpeedSo.WalkSpeed;
         if (commandContainer.JumpCommand && groundChecker.IsGrounded)
             currentMoveSpeed *= chargingMoveSpeedFactor;
 
