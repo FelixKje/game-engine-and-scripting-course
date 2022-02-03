@@ -75,7 +75,6 @@ GameObject:
   - component: {fileID: 7935766372369349660}
   - component: {fileID: 7935766372369349651}
   - component: {fileID: 7935766372369349650}
-  - component: {fileID: 3521311345313158823}
   - component: {fileID: 3120981047776349144}
   - component: {fileID: 456541583894355071}
   - component: {fileID: 2715622170265066981}
@@ -183,19 +182,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &3521311345313158823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935766372369349649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb4cdc6ab965cd744b29d687e4acea29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody: {fileID: 7935766372369349650}
 --- !u!114 &3120981047776349144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,8 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd735253faaff149a24f31dd90640ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRigidbody: {fileID: 7935766372369349650}
-  movementApplier: {fileID: 3521311345313158823}
+  _rigidbody: {fileID: 7935766372369349650}
   commandContainer: {fileID: 221332345}
   groundChecker: {fileID: 3120981047776349144}
   moveSpeed: 5
@@ -243,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0460f58ba6fa9489b81c9d5a80c652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementApplier: {fileID: 3521311345313158823}
+  myRigidbody: {fileID: 7935766372369349650}
   commandContainer: {fileID: 221332345}
   groundChecker: {fileID: 3120981047776349144}
   minimumJumpForce: 100
