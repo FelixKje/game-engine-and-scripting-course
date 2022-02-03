@@ -16,6 +16,7 @@ public class WalkController : MonoBehaviour
         if (commandContainer.JumpCommand && groundChecker.IsGrounded)
             currentMoveSpeed *= chargingMoveSpeedFactor;
 
+        //Vector3.MoveTowards(); //possible solution to apply Addforce correctly from jumppad
         _rigidbody.velocity = new Vector3(commandContainer.WalkCommand * currentMoveSpeed, _rigidbody.velocity.y,0);
     }
 }
