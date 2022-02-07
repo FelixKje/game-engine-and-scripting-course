@@ -23,6 +23,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debug/EventCallbackExamples.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/WalkSpeedSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/GameObjectToggler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/ScaleAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Identifier/PlayerIdentifier.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="248gKABGOvFiJTHsLCDGVfZNPa0" />
@@ -73,7 +75,8 @@
       <workItem from="1643093022851" duration="604000" />
       <workItem from="1643271164364" duration="6000" />
       <workItem from="1643879436224" duration="1648000" />
-      <workItem from="1643881857273" duration="5894000" />
+      <workItem from="1643881857273" duration="8375000" />
+      <workItem from="1644222001827" duration="3674000" />
     </task>
     <servers />
   </component>
