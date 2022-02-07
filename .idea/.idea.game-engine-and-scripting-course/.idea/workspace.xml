@@ -25,9 +25,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelObjectToggler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/WalkSpeedSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debug/ActionEmitterExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/GameObjectToggler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debug/GameEventCallerExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debug/ActionListenerExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/ScaleAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Identifier/PlayerIdentifier.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -81,7 +83,7 @@
       <workItem from="1643271164364" duration="6000" />
       <workItem from="1643879436224" duration="1648000" />
       <workItem from="1643881857273" duration="8375000" />
-      <workItem from="1644222001827" duration="5949000" />
+      <workItem from="1644222001827" duration="8237000" />
     </task>
     <servers />
   </component>
